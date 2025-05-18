@@ -4,8 +4,8 @@ kind: Kustomization
 configMapGenerator:
   - name: cart-config
     envs:
-    - ./common/common.env
-    - ./cart/cart.env
+      - cart/cart.env
+      - common/common.env
 
 generatorOptions:
   disableNameSuffixHash: true
